@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <style>
+    button {
+  font-family: "helvetica neue", helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid rgb(200 200 0 / 60%);
+  background-color: rgb(0 217 217 / 60%);
+  color: rgb(100 0 0 / 100%);
+  box-shadow: 1px 1px 2px rgb(0 0 200 / 40%);
+  border-radius: 10px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+  </style>
+    
+<button type="button">Player 1: Chris</button>
+  <script>
+    // Your JavaScript goes here!
+    console.log("Hello, World!")
+
+    let name = "John";
+    let surname = "Doe";
+
+console.log(name);
+console.log(surname);
+
+let age = 11;
+console.log(age); // outputs 11 to the console
+
+age = 54;
+ 
+console.log(age); // what will be output now?
+
+
+console.log((3 + 2) - 76 * (1 + 1));
+
+console.log(23+97);
+
+console.log(12+14+2+20+10+15);
+
+console.log((4+6+9)/77);
+
+let  a = 10;
+console.log(a);
+
+a = 15;
+console.log(a);
+
+let b = 7 * a;
+
+console.log(b);
+
+const max = 57;
+const actual = max - 13;
+const percentage = actual / max;
+console.log(percentage);
+
+
+
+function createParagraph() {
+  const para = document.createElement("p");
+  para.textContent = "You clicked the button!";
+  document.body.appendChild(para);
+}
+
+const buttons = document.querySelectorAll("button");
+
+for (const button of buttons) {
+  button.addEventListener("click", createParagraph);
+}
+
+
+
+function updateName() {
+  const name = prompt("Enter a new name");
+  button.textContent = `Player 1: ${name}`;
+}
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", updateName);
+
+
+
+
+
+  </script>
+
+
+</body>
+</html>
